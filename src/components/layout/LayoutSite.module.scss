@@ -1,0 +1,42 @@
+.LayoutSite {
+  display: flex;
+  .block1 {
+    width: 270px;
+    height: 100vh;
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    @media (max-width: 768px) {
+      width: 0px;
+      height: 0px;
+      display: block;
+      padding: 0;
+    }
+    @media (max-width: 1024px) {
+      width: 65px;
+    }
+  }
+  .block2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    background: black;
+    width: 100%;
+    margin-left: 272px;
+
+    @media (max-width: 1024px) {
+      margin-left: 65px;
+    }
+    @media (max-width: 768px) {
+      margin-left: 0;
+      margin: 0 auto;
+    }
+    footer {
+      margin-top: auto;
+    }
+  }
+}
